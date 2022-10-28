@@ -1,6 +1,6 @@
 # Vet-clinic-db
 
-> Vet-clinic is relational database project that contains informations about animals. 
+> Vet-clinic is relational database that has animals data-structures. 
 > All queries operation can be peformed on the table, data insertion, data update etc... 
 > Build with postgreSql.
 
