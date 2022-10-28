@@ -11,3 +11,23 @@ INSERT INTO animals VALUES (9, 'Boarmon', '2005-06-07', 7, true, 20.4);
 INSERT INTO animals VALUES (10, 'Blossom', '1998-10-13', 3, true, 17);
 INSERT INTO animals VALUES (11, 'Ditto', '2022-05-14', 4, true, 22);
 
+--Query multiple tables
+INSERT INTO owners (age,full_name) VALUES (34, 'Sam Smith');
+INSERT INTO owners (age,full_name) VALUES ( 19, 'Jennifer Orwell');
+INSERT INTO owners (age,full_name) VALUES ( 45, 'Bob');
+INSERT INTO owners (age,full_name) VALUES (77, 'Melody Pond');
+INSERT INTO owners (age,full_name) VALUES (14, 'Dean Wincheste');
+INSERT INTO owners (age,full_name) VALUES (38, 'Jodie Whittake');
+
+INSERT INTO species (name) VALUES ('Pokemon');
+INSERT INTO species (name) VALUES ('Digimon');
+
+UPDATE animals SET species_id = 3 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 2 WHERE name NOT LIKE '%mon';
+
+UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
+UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR 'Pikachu'; 
+UPDATE animals SET owner_id = 6 WHERE name = 'Devimon' OR name ='Plantmon';
+UPDATE animals SET owner_id = 3 WHERE name = 'Charmander' OR name='Squirtle' OR name ='Blossom';
+UPDATE animals SET owner_id = 4 WHERE name = 'Angemon' OR name ='Boarmon';
+
