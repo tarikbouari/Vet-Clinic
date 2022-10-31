@@ -56,4 +56,4 @@ CREATE INDEX visits_animalID ON visits visits(animal_id);
 
 CREATE INDEX visits_vetID ON visits(vet_id);
 
-
+CREATE INDEX owners_emailID ON owners(email);
